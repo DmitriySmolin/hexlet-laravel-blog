@@ -9,3 +9,9 @@ class Article extends Model
 {
     use HasFactory;
 }
+
+
+
+
+
+
