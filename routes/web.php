@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ArticleController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +16,7 @@ use App\Http\Controllers\PageController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('/');
 
 
 // Route::get('/about', function () {
@@ -23,3 +24,5 @@ Route::get('/', function () {
 // });
 
 Route::get('about', [PageController::class, 'about']);
+
+Route::get('/articles', [ArticleController::class, 'index'])->name('articles');
