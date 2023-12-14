@@ -1,0 +1,4 @@
+.nav-block > nav {
+    display: flex;
+    flex-direction: column;
+}
