@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -33,7 +31,7 @@
                 <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{ route('articles') }}">Articles</a>
+                <a class="nav-link active" aria-current="page" href="{{ route('articles.index') }}">Articles</a>
                 </li>
             </ul>
             </div>
