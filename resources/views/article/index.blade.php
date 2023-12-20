@@ -7,9 +7,9 @@
         <div>{{$article->body}}</div>
         <small><a href="{{route('articles.edit', $article)}}">Редактировать статью</a></samll>
         <form action="{{ route('articles.destroy', $article->id) }}" method="POST">
-            @csrf
-            @method('DELETE')
-            <button type="submit">Удалить</button>
+        @csrf
+        @method('DELETE')
+        <button type="submit">Удалить</button>
         </form>
     @endforeach
 @endsection

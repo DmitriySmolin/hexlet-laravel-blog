@@ -1,3 +1,3 @@
 import './bootstrap';
-import ujs from '@rails/ujs';
-ujs.start();
+// import ujs from '@rails/ujs';
+// ujs.start();
